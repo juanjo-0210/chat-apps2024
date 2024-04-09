@@ -1,41 +1,58 @@
 /* Estilo componente chat */
 
+
 .chat-box{
     display: flex;
     flex-direction: column;
     gap: 3px;
-    padding: 0 10px;
+    padding: 0 10px 0 0;
+}
+
+.containerer{
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 0;
+    backdrop-filter: grayscale(80%);
+}
+.filter{
+    background-image: url(../img/fondo.jpeg);
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+}
+
+.lateral{
+    border-right: 0.5px solid rgba(1, 1, 1, 0.774);
+    background-color: rgba(1, 1, 1, 0.844);
 }
 
 .text-box{
-    /* display: flex;
-    flex-direction: column; */
+    flex-direction: column; 
     height: 92vh;
     padding: 15px; 
     /* justify-content: end;
     align-items: end;
     gap: 8px;
     border: 1px solid #000; */
-    padding: 20px 0;
+    padding: 0 15px 0 5px; 
     overflow: hidden;
     overflow-y: auto;
- 
-}
-
-.text-box:last-child .span{
-    
-}
-
-.text-box > * {
-    flex-shrink: 0;
 }
 
 .user-box{
    padding: 5px 0;
 }
-
+.form{
+    background-color: #2d2d2d;
+    display: flex;
+    margin: 0px 10px;
+    padding: 1px 5px;
+    border-radius: 10px;
+}
 .write-box{
-    width: 85%;
+    width: 100%;
+    position: relative;
+    background-color: #2d2d2d;
 }
 
 .sender{
@@ -47,26 +64,113 @@
 .text-bubble{
     min-width: 20px;
     min-height: 35px;
-
-    /* box-shadow: 0px 0px 10px 1px #cfcfcf; */
 }
 
 .span{
     display: inline-block;
     padding: 5px 15px;
     border-radius: 10px;
-    background-color: rgba(172, 225, 172, 0.848);
-    max-width: 75%;
+    background-color: rgb(163, 234, 163);
+    max-width: 65%;
+    word-wrap: break-word;
+    border-top: 0.5px solid #1bc5b4;
+    color: white;
+    /* text-align: start; */
 }
 li{
     margin: 5px 0;
 }
-ul{
-   
+.self{
+    text-align: end;
+    background-color: #128b7e;
+}
+.other{
+    text-align: start;
+    background-color: #2d2d2d;
+    border-top: 0.5px solid #595959;
+}
+
+.signOut:hover{
+    background-image: ;
+}
+
+.loginButtom{
+    border: 2px solid white; 
+    border-radius: 15px; 
+    width: 120px; color: white; 
+    font-weight: bold; 
+    box-shadow: 5px 5px 3px grey; 
+    font-size: 1.1rem;
+    align-self: first center;
+    cursor: pointer;  
+    padding: 5px; 
+    transition: 0.5s;
+}
+
+.loginButtom:hover{
+    scale: 1.1; 
+    background-color: black; 
+    transition: 1s;
 }
 
 
+.caja-emoji{
+    position: fixed;
+    bottom: 0px;
+    display: block;
+}
 
+.react-input-emoji--input{
+    background-color: #2d2d2d;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+}
+.react-input-emoji--container{
+    border: none !important;
+}
+.hidde{
+    color: white;
+}
+.hidde:hover{
+    background-color: #85838318;
+}
+.hidde:not(:last-of-type){
+    display: none !important;
+}
+
+.top-bar{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: #2d2d2d;
+    color: white;
+    padding: 5px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    margin-right: 5px;
+}
+::-webkit-scrollbar-track:hover {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #b5b3b3;
+}
+.oculto{
+    visibility: hidden;
+}
+.line{
+    font-family: monospace;
+    height: 100%;
+    font-size: 1.2em;
+}
+.line:hover{
+    background-color: #2d2d2d24;
+    
+}
 
 
 /* Estilo componente chat */
